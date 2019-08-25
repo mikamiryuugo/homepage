@@ -45,12 +45,16 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../docs/index.html'),
+    index: path.resolve(__dirname, '../dist/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../docs'),
+    assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '',
+
+    assetsPublicPath: '', //相対パス（css-img:static/img/, html-img:../assets/）
+    //assetsPublicPath: '/homepage-project/dist/',　//gh-pagesリリース時パス（css-img:../assets/, html-img:../assets/）
+    //assetsPublicPath: '/homepage-project/', //masterリリース時パス（css-img:../assets/, html-img:../assets/）
+
 
     /**
      * Source Maps
