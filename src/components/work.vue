@@ -115,7 +115,7 @@ li::after {
 }
 .workindex {
   display: inline-block;
-  width: 20%;
+  width: 25%;
   background-color: #24292D;
 }
 .work {

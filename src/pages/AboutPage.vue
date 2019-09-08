@@ -11,7 +11,7 @@
         <a
         v-bind:href="this.github"
         target="_blank"
-        class="btn tips"
+        class="tips"
         >
         <img
           src="@/assets/GitHub-Mark-120px-plus.png"
@@ -21,7 +21,7 @@
         <a
         v-bind:href="this.qiita"
         target="_blank"
-        class="btn tips"
+        class="tips"
         >
         <img
           src="@/assets/qiita-square.png"

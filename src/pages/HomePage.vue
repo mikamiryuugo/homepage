@@ -11,7 +11,7 @@
             v-for="section in sections"
             v-bind:key="section.id"
             href="#"
-            @click="doSmoothScroll(section.link)"
+            v-on:click="doSmoothScroll(section.link)"
             class="btn item"
           >
             <p class="caption">
@@ -96,8 +96,8 @@ header {
   padding: 10px 0;
 }
 .item {
-  width: 15%;
-  margin: 10px;
+  width: 21%;
+  margin: 6px;
   border: 1px solid #dee7ec;
   background-color:rgba(0, 0, 0, 0.3);
 }
@@ -105,7 +105,7 @@ header {
   background-color:rgba(255, 255, 255, 0.3);
 }
 .section {
-    width:70%;
+    width:90%;
     margin: 0 auto;
     padding: 10px;
     border: solid #b0c4de 0px;

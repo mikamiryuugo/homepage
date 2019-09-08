@@ -63,6 +63,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+li {
+  width: 150px;
+}
 .twitter {
   background-color: #55acee;
 }

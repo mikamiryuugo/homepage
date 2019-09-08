@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import smoothScroll from 'vue-smoothscroll'
-// import HelloWorld from '@/components/HelloWorld'
 import Home from '@/pages/HomePage'
 import About from '@/pages/AboutPage'
 import Work from '@/pages/WorkPage'
@@ -12,13 +11,8 @@ Vue.use(Router)
 Vue.use(smoothScroll)
 
 export default new Router({
-  // mode: 'history', //１GitHubPagesで画面が出ないためコメントアウトする
+  // mode: 'history', //GitHubPagesで画面が出ないためコメントアウトする
   routes: [
-    // {
-    // path: '/',
-    // name: 'HelloWorld',
-    // component: HelloWorld
-    // },
     {
       path: '/',
       name: 'Home',

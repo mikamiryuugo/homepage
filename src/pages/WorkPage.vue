@@ -27,7 +27,7 @@ export default {
       msg: '今まで開発したものです。クリックで詳細が表示されます。',
       posts: [
         {id: 1, title: 'HomePage', url: 'http://selene.himegimi.jp/', giturl: '', description: '個人的な趣味のHPです。Javaからhtmlを出力しレンタルサーバーへアップして公開していました。', technology: 'Java, eclipse, html, javascript, css'},
-        {id: 2, title: 'Portfolio', url: 'https://c3drive.github.io/homepage-project/dist/', giturl: 'https://github.com/c3drive/homepage-project', description: 'このサイトです。', technology: 'vue-cli, github, html5, javascript, css'}
+        {id: 2, title: 'Portfolio', url: 'https://c3drive.github.io/homepage-project/dist/', giturl: 'https://github.com/c3drive/homepage-project', description: 'このサイトです。Qiitaにアウトプットしつつ環境構築から開発を行いました。', technology: 'vue-cli, github, html5, javascript, css'}
       ]
     }
   }

@@ -65,7 +65,7 @@ a {
   margin-inline-end: 0px;
 }
 .btn {
-  padding: 8px 20px;
+  padding: 8px 10px;
   display: inline-block;
   opacity: 0.8;
   border: solid #24292D 1px;
@@ -76,12 +76,12 @@ a {
   opacity: 1;
 }
 .left-field {
-    padding: 5px;
+    padding: 1px;
     float: left;
     width: 30%;
 }
 .right-field {
-    padding: 5px;
+    padding: 1px;
     float: right;
     width: 65%;
 }
