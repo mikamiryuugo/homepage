@@ -79,7 +79,7 @@ header {
 }
 .top-wrapper {
   padding: 100px 0 50px 0;
-  background-image: url(~@/assets/keyboard-2308477_1920.jpg);
+  background-image: url(~@/assets/main.jpg);
   background-size: cover;
   color: white;
   border-bottom: 2px solid #dee7ec;
