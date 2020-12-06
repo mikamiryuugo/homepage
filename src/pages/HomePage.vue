@@ -23,23 +23,18 @@
       </div>
     </div>
     <about-page id='about' class='section'></about-page>
-    <!-- <work-page id='work' class='section'></work-page> -->
     <skill-page id='skill' class='section'></skill-page>
     <contact-page id='contact' class='section'></contact-page>
   </div>
 </template>
 
 <script>
-import Item from '@/components/Item'
 import AboutPage from '@/pages/AboutPage'
-import WorkPage from '@/pages/WorkPage'
 import SkillPage from '@/pages/SkillPage'
 import ContactPage from '@/pages/ContactPage'
 export default {
   components: {
-    'item-component': Item,
     'about-page': AboutPage,
-    'work-page': WorkPage,
     'skill-page': SkillPage,
     'contact-page': ContactPage
   },
@@ -55,7 +50,6 @@ export default {
       msg: 'wellcome',
       sections: [
         {id: 1, title: 'Profile', link: 'about', icon: 'fas fa-user'},
-        // {id: 2, title: 'Work', link: 'work', icon: 'fas fa-images'},
         {id: 2, title: 'Skills', link: 'skill', icon: 'fas fa-list-ul'},
         {id: 3, title: 'Contact', link: 'contact', icon: 'fas fa-envelope'}
       ]

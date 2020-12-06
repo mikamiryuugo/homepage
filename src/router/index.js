@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import smoothScroll from 'vue-smoothscroll'
 import Home from '@/pages/HomePage'
 import About from '@/pages/AboutPage'
-import Work from '@/pages/WorkPage'
 import Skill from '@/pages/SkillPage'
 import Contact from '@/pages/ContactPage'
 
@@ -22,11 +21,6 @@ export default new Router({
       path: '/about',
       name: 'About',
       component: About
-    },
-    {
-      path: '/work',
-      name: 'Work',
-      component: Work
     },
     {
       path: '/skill',
