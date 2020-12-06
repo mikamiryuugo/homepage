@@ -18,30 +18,6 @@
         </a>
         <div class="li-footer"></div>
       </li>
-      <li>
-        <a
-        v-bind:href="this.facebook"
-        target="_blank"
-        class="btn facebook"
-        >
-        <span class="fab fa-facebook"></span>
-        facebook
-        </a>
-        <div class="li-footer"></div>
-      </li>
-      <li>
-        <a
-        v-bind:href="this.wantedly"
-        class="btn wantedly"
-        target="_blank"
-        >
-          <img
-            class="icon"
-            src="@/assets/wantedly_logo_print.png"
-          />
-        </a>
-        <div class="li-footer"></div>
-      </li>
     </ul>
   </div>
 </template>
@@ -50,11 +26,9 @@
 export default {
   data () {
     return {
-      msg: '転職活動中です。SNSかメールでお気軽にご連絡ください',
-      mail: 'c3drive@gmail.com',
-      twitter: 'https://twitter.com/c3drive',
-      facebook: 'https://www.facebook.com/yuko.kanai.77',
-      wantedly: 'https://www.wantedly.com/users/100164209'
+      msg: 'お問い合わせはSNSかメールでお気軽にご連絡ください',
+      mail: 'ryutarodesuyooo@gmail.com',
+      twitter: 'https://twitter.com/osvUDw99utaxUTl'
     }
   }
 }
@@ -64,6 +38,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 li {
+  margin-left: 30px;
   width: 150px;
 }
 .twitter {

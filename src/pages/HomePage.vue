@@ -3,7 +3,7 @@
     <div class="top-wrapper">
       <div class="container">
         <h1>{{ title }}</h1>
-        <p>{{ msg }}</p>
+        <!-- <p>{{ msg }}</p> -->
       </div>
       <div class="container">
         <div class="items">
@@ -23,7 +23,7 @@
       </div>
     </div>
     <about-page id='about' class='section'></about-page>
-    <work-page id='work' class='section'></work-page>
+    <!-- <work-page id='work' class='section'></work-page> -->
     <skill-page id='skill' class='section'></skill-page>
     <contact-page id='contact' class='section'></contact-page>
   </div>
@@ -51,13 +51,13 @@ export default {
   name: 'Home',
   data () {
     return {
-      title: 'Yuko Kanai\'s portfolio',
+      title: 'My Introduction',
       msg: 'wellcome',
       sections: [
-        {id: 1, title: 'About', link: 'about', icon: 'fas fa-user'},
-        {id: 2, title: 'Work', link: 'work', icon: 'fas fa-images'},
-        {id: 3, title: 'Skill', link: 'skill', icon: 'fas fa-list-ul'},
-        {id: 4, title: 'Contact', link: 'contact', icon: 'fas fa-envelope'}
+        {id: 1, title: 'Profile', link: 'about', icon: 'fas fa-user'},
+        // {id: 2, title: 'Work', link: 'work', icon: 'fas fa-images'},
+        {id: 2, title: 'Skills', link: 'skill', icon: 'fas fa-list-ul'},
+        {id: 3, title: 'Contact', link: 'contact', icon: 'fas fa-envelope'}
       ]
     }
   }

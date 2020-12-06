@@ -37,15 +37,14 @@
 export default {
   data () {
     return {
-      msg: '立ち上がりはやいです',
+      msg: '',
       profiles: [
-        {id: 1, title: 'PHP', icon1: require('@/assets/php.svg'), icon2: require('@/assets/cakephp.svg'), description: 'クラス設計から可能。Web、API、バッチ開発可能。'},
-        {id: 2, title: 'Java', icon1: require('@/assets/java.svg'), description: 'Strutsベースでの開発、JavaEE、Servletなど経験、環境構築からの経験なし。'},
-        {id: 3, title: 'HTML5/CSS3/JavaScript', icon1: require('@/assets/html-5.svg'), icon2: require('@/assets/css-3.svg'), icon3: require('@/assets/javascript.svg'), description: '基本的に問題なし。AJaxは必要最低限。'},
-        {id: 4, title: 'PostgreSQL/AmazonRDS/MySQL/Sybase/Oracle', icon1: require('@/assets/postgresql.svg'), icon2: require('@/assets/aws-rds.svg'), icon3: require('@/assets/mysql.svg'), description: '各DBの特徴、必要最低限のコマンド知識。'},
-        {id: 5, title: 'Apache/EC2/Linux/Tomcat/Nginx/S3/EBS/AutoScalling', icon1: require('@/assets/apache.svg'), icon2: require('@/assets/aws.svg'), icon3: require('@/assets/linux-tux.svg'), description: 'ミドルウェアインストール、環境構築、運用が可能な程度のコマンドやサーバーの知識。'},
-        {id: 6, title: 'Vue.js/Python/Go/AWS新規サービス', icon1: require('@/assets/vue.svg'), icon2: require('@/assets/python.svg'), icon3: require('@/assets/gopher.svg'), description: '学習中。'},
-        {id: 7, title: 'GCP/Docker/CircleCI/NoSQL', icon1: require('@/assets/google-cloud.svg'), icon2: require('@/assets/circleci.svg'), icon3: require('@/assets/docker.svg'), description: '今後やりたい事。興味。'}
+        {id: 1, title: 'Ruby', icon1: require('@/assets/ruby.svg'), description: '３年~。Web、API、バッチ開発可能。'},
+        {id: 2, title: 'HTML5/CSS3/JavaScript', icon1: require('@/assets/html-5.svg'), icon2: require('@/assets/css-3.svg'), icon3: require('@/assets/javascript.svg'), description: '基本的に問題なし。'},
+        {id: 3, title: 'PostgreSQL/MySQL', icon1: require('@/assets/postgresql.svg'), icon2: require('@/assets/mysql.svg'), description: '基本的に問題なし。'},
+        {id: 4, title: 'Ruby on Rails', icon1: require('@/assets/rails.svg'), description: '３年~'},
+        {id: 5, title: 'Vue.js/jQuery', icon1: require('@/assets/vue.svg'), icon2: require('@/assets/jquery.svg'), description: '６ヶ月~/ ２年'},
+        {id: 6, title: 'Docker/CircleCI',icon1: require('@/assets/docker.svg'), icon3: require('@/assets/circleci.svg'), description: '基本的に問題なし'}
       ]
     }
   }

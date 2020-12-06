@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1 class="section-index">About</h1>
-    <p class="msg">{{ msg }}</p>
+    <h1 class="section-index">Profile</h1>
+    <p class="msg" style="white-space:pre-wrap; word-wrap:break-word;">{{ msg }}</p>
     <div class="container">
       <div class="left-field">
         <img
-          src="@/assets/icon.jpeg"
+          src="@/assets/me.jpg"
           class="myicon"
         />
         <a
@@ -48,14 +48,18 @@
 export default {
   data () {
     return {
-      msg: '東京在住。転職活動中。趣味は、筋トレと効率化と勉強',
+      msg: `Ruby, Vue.jsがメインのエンジニア。
+      営業職だったが自分の市場価値に疑問を持ち
+      「会社に依存せず『個』の実力をつける。」べくエンジニアに転職。
+      プログラミング学習に苦労しつつも、現在はフリーランスとして働いています。`,
       github: 'https://github.com/c3drive',
-      qiita: 'https://qiita.com/c3drive',
+      qiita: 'https://qiita.com/ryuuuuuuuuuu',
       profiles: [
-        {id: 1, title: '2006年04月：ポイントシステム開発', description: '主にJavaでの開発。オブジェクト指向の概念が大好きに。'},
-        {id: 2, title: '2010年05月：Webシステム開発', description: '主にPHPでフロントからバックエンドまで開発。要件定義からインフラ構築まで一通り関われ気づけば6年ほどいました。'},
-        {id: 3, title: '2016年11月：WebシステムQA', description: '営業的な立ち回り4割、管理7割。QAという領域そのものの課題を解消しようとしていたところで、スクラム開発のQAとしてどっぷり。やれる事が無限にある状態で案件フリーで立ち回れなくなったのが悩み。'},
-        {id: 4, title: '◆保有資格◆', description: '応用技術者試験、AWSクラウドプラクティショナー、TOEIC530点、JSTQB'}
+        {id: 1, title: '2012年04月~2017年9月：メーカー営業', description: '大手法人への自社製品の提案・販売を行う。'},
+        {id: 2, title: '2017年10月~2018年5月：会員制Webサイト開発', description: 'Webエンジニアに転職。業界未経験のためテスターで現場参画。次第に開発も携わるようになる。'},
+        {id: 3, title: '2018年6月~2019年6月：モチベーションマネジメントシステム開発', description: 'プログラマーとして参画。Rubyを使ったバックエンドを中心に、jQueryでのフロントエンド開発にも携わる。'},
+        {id: 4, title: '2019年7月~2020年6月：決済システム開発', description: 'Rubyでのバックエンドメインでさらに実務経験を積む。'},
+        {id: 5, title: '2020年7月~2020年12月：予約システム開発', description: 'Vue.jsを使ったフロントエンド実装でスキルの幅を広げる。RailsでのAPI開発も行う。'}
       ]
     }
   }
