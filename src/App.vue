@@ -1,7 +1,18 @@
 <template>
   <div id="app">
-    <header></header>
     <main>
+      <div class="top-wrapper">
+        <router-link v-bind:to="section.path" class="btn item" v-for="section in sections" :key="section.id">
+          <!-- クリックしたpathにとび、そのコンポーネントが下にあるrouter-viewに描画される。
+          (router-viewコンポーネントによって、ルーティングで定義されたコンポーネントが描画される)
+         「ルーティング制御によって表示したいコンテンツの場所」に、<router-view>タグを記述する。
+          ＊最初はHomePage.vueが表示、index.jsに書いたpathが"/"だから。-->
+          <p class="caption">
+            <span v-bind:class="section.icon"></span>
+            {{ section.title }}
+          </p>
+        </router-link>
+      </div>
       <transition mode="out-in">
         <router-view/>
       </transition>
@@ -11,8 +22,20 @@
 </template>
 
 <script>
+import AboutPage from '@/pages/AboutPage'
+import SkillPage from '@/pages/SkillPage'
+import ContactPage from '@/pages/ContactPage'
 export default {
-  name: 'App'
+  data () {
+    return {
+      title: 'My Introduction',
+      sections: [
+        {id: 1, title: 'About', link: 'about', icon: 'fas fa-user', path: '/about'},
+        {id: 2, title: 'Skills', link: 'skill', icon: 'fas fa-list-ul', path: '/skill'},
+        {id: 3, title: 'Contact', link: 'contact', icon: 'fas fa-envelope', path: '/contact'}
+      ]
+    }
+  }
 }
 </script>
 
@@ -24,45 +47,12 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-.v-enter-active, .v-leave-active {
-  transition: opacity .5s;
-}
-.v-enter, .v-leave-to {
-  opacity: 0;
-}
-.section-index::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 50px;
-  background-color: #ccc;
-  margin: auto;
-}
 p {
   margin: 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 5px 8px;
-}
-a {
-  color: white;
-  text-decoration: none;
 }
 .container {
   padding: 0 15px;
   margin: 5px auto;
-}
-.msg {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 .btn {
   padding: 8px 10px;
@@ -75,21 +65,52 @@ a {
 .btn:hover {
   opacity: 1;
 }
-.left-field {
-    padding: 1px;
-    float: left;
-    width: 30%;
-}
-.right-field {
-    padding: 1px;
-    float: right;
-    width: 65%;
-}
 .caption {
   font-size: 1.1em;
   font-weight: bold;
 }
-.text {
-  font-size: 0.9em;
+.top-wrapper {
+  width: 100%;
+  padding: 20px 0 50px 0;
+  background-size: cover;
+  color: white;
+  border-bottom: 2px solid #dee7ec;
+}
+.item {
+  width: 21%;
+  margin: 6px;
+  border: 1px solid #dee7ec;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+.item:active{
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+.item:hover {
+  background-color:rgba(255, 255, 255, 0.3);
+}
+.section {
+    width:90%;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid #b0c4de 0px;
+}
+.section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 5px 8px;
 }
 </style>

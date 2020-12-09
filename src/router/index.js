@@ -1,4 +1,5 @@
 import Vue from 'vue'
+// プラグインとしての使用
 import Router from 'vue-router'
 import smoothScroll from 'vue-smoothscroll'
 import Home from '@/pages/HomePage'
@@ -13,24 +14,24 @@ export default new Router({
   // mode: 'history', //GitHubPagesで画面が出ないためコメントアウトする
   routes: [
     {
-      path: '/',
+      path: '/', // このパスにアクセスしたら
       name: 'Home',
-      component: Home
+      component: Home // このコンポーネントを呼ぶ
     },
     {
-      path: '/about',
+      path: '/about', // このパスにアクセスしたら
       name: 'About',
-      component: About
+      component: About // このコンポーネントを呼ぶ
     },
     {
-      path: '/skill',
+      path: '/skill', // このパスにアクセスしたら
       name: 'Skill',
-      component: Skill
+      component: Skill // このコンポーネントを呼ぶ
     },
     {
-      path: '/contact',
+      path: '/contact', // このパスにアクセスしたら
       name: 'Contact',
-      component: Contact
+      component: Contact // このコンポーネントを呼ぶ
     }
   ]
 })

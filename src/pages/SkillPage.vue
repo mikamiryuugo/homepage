@@ -44,7 +44,7 @@ export default {
         {id: 3, title: 'PostgreSQL/MySQL', icon1: require('@/assets/postgresql.svg'), icon2: require('@/assets/mysql.svg'), description: '基本的に問題なし。'},
         {id: 4, title: 'Ruby on Rails', icon1: require('@/assets/rails.svg'), description: '３年~'},
         {id: 5, title: 'Vue.js/jQuery', icon1: require('@/assets/vue.svg'), icon2: require('@/assets/jquery.svg'), description: '６ヶ月~/ ２年'},
-        {id: 6, title: 'Docker/CircleCI',icon1: require('@/assets/docker.svg'), icon3: require('@/assets/circleci.svg'), description: '基本的に問題なし'}
+        {id: 6, title: 'Docker/CircleCI', icon1: require('@/assets/docker.svg'), icon3: require('@/assets/circleci.svg'), description: '基本的に問題なし'}
       ]
     }
   }
@@ -55,13 +55,20 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 li {
-  display: list-item;
+  display: flex;
+  justify-content: center;
   margin-bottom: 10px;
 }
 .left-field{
   text-align: right;
 }
+.left-field {
+  padding: 1px;
+  float: left;
+  width: 265px;
+}
 .right-field{
+  min-width: 275px;
   text-align: left;
 }
 .li-footer {

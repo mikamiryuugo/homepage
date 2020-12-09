@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="section-index">Profile</h1>
+    <h1 class="section-index">About</h1>
     <p class="msg" style="white-space:pre-wrap; word-wrap:break-word;">{{ msg }}</p>
     <div class="container">
       <div class="left-field">
@@ -52,7 +52,7 @@ export default {
       営業職だったが自分の市場価値に疑問を持ち
       「会社に依存せず『個』の実力をつける。」べくエンジニアに転職。
       プログラミング学習に苦労しつつも、現在はフリーランスとして働いています。`,
-      github: 'https://github.com/c3drive',
+      github: 'https://github.com/mikamiryuugo',
       qiita: 'https://qiita.com/ryuuuuuuuuuu',
       profiles: [
         {id: 1, title: '2012年04月~2017年9月：メーカー営業', description: '大手法人への自社製品の提案・販売を行う。'},
@@ -72,6 +72,13 @@ li {
   display: list-item;
   text-align: left;
   margin-bottom: 10px;
+}
+.left-field {
+  padding: 1px;
+}
+.right-field{
+  margin: 0 auto;
+  width: 70%;
 }
 .myicon {
   display: block;
@@ -93,5 +100,4 @@ li {
 .text {
   font-size: 1em;
 }
-
 </style>
