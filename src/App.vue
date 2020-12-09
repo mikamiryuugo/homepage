@@ -22,9 +22,6 @@
 </template>
 
 <script>
-import AboutPage from '@/pages/AboutPage'
-import SkillPage from '@/pages/SkillPage'
-import ContactPage from '@/pages/ContactPage'
 export default {
   data () {
     return {
