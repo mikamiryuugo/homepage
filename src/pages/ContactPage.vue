@@ -16,7 +16,7 @@ export default {
   data () {
     return {
       msg: 'お問い合わせはSNSかメールでお気軽にご連絡ください',
-      mail: 'ryutarodesuyooo@gmail.com',
+      mail: 'ryutarodesuyooo@gmail.com'
     }
   }
 }
